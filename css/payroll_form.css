@@ -210,4 +210,15 @@ select
         justify-content: space-between;
         margin-bottom: 20px;
     }
+
+    .submitButton
+    {
+        margin: 0;
+    }
+
+    .button-content
+    {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
 }
