@@ -26,6 +26,30 @@ window.addEventListener('DOMContentLoaded', (Event) => {
     });
 });
 
+const resetForm = () => {
+    setValue('#name', '');
+    unsetSelectedValues('[name=profile]');
+    unsetSelectedValues('[name=gender]');
+    unsetSelectedValues('[name=department]');
+    setValue('#salary', '');
+    setValue('#notes', '');
+    setValue('#day', '1');
+    setValue('#month', 'January');
+    setValue('#year', '2020');
+}
+
+const unsetSelectedValues = (propertyValue) => {
+    let allitems = document.querySelectorAll(propertyValue);
+    allitems.forEach(item => {
+        item.checked = false;
+    });
+}
+
+const setValue = (id, value) => {
+    const element = document.querySelector(id);
+    element.value = value;
+}
+
 const save = () => {
     try 
     {
