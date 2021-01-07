@@ -83,7 +83,7 @@
             </div>
             <div class="row-content">
                 <label class="label text" for="startDate">Start Date</label>
-                <div>
+                <div id="date">
                     <select name="Day" id="day">
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -140,6 +140,7 @@
                         <option value="2016">2016</option>
                     </select>
                 </div>
+                <error-output class="date-error" for="startDate"></error-output>
             </div>
             <div class="row-content">
                 <label class="label text" for="notes">Notes</label>
