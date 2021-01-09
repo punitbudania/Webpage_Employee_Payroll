@@ -104,6 +104,24 @@ const save = (Event) => {
     catch (error) { return; }
 }
 
+const createOrUpdateEmployeePayroll = () => {
+    let postURL = site_properties.server_url;
+    let methodCall - "POST";
+    if(isUpdate)
+    {
+        methodCall = "PUT";
+        postURL = postURL + employeePayrollObj.id.toString();
+    }
+    makeServiceCall(methodCall, postURL, false, employeePayrollObj)
+        .then(responseText => {
+            resetForm();
+            window.location.replace(site_properties.home_page);
+        })
+        .catch(error => {
+            throw error;
+        });
+}
+
 const setEmployeePayrollObject = () => {
     if(!isUpdate && site_properties.use_local_storage.match("true"))
     {
