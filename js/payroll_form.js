@@ -106,7 +106,7 @@ const save = (Event) => {
 
 const createOrUpdateEmployeePayroll = () => {
     let postURL = site_properties.server_url;
-    let methodCall - "POST";
+    let methodCall = "POST";
     if(isUpdate)
     {
         methodCall = "PUT";
