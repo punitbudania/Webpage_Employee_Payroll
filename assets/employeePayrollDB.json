@@ -11,19 +11,7 @@
       "_salary": "500000",
       "_startDate": "29 Oct 2019",
       "_note": "All In One",
-      "_profilePic": "../assets/profile-images/Ellipse -3.png"
-    },
-    {
-      "id": 2,
-      "_name": "Bill Gates",
-      "_gender": "male",
-      "_department": [
-        "Engineer"
-      ],
-      "_salary": "500000",
-      "_startDate": "29 Oct 2019",
-      "_note": "Terrific Engineer",
-      "_profilePic": "../assets/profile-images/Ellipse -1.png"
+      "_profilePic": "../assets/Ellipse -3.png"
     },
     {
       "_name": "Amarpa Shashanka Keerthi Kumar",
@@ -34,8 +22,23 @@
       "_salary": "400000",
       "_startDate": "29 Oct 2019",
       "_note": "",
-      "_profilePic": "../assets/profile-images/Ellipse -1.png",
+      "_profilePic": "../assets/Ellipse -1.png",
       "id": 3
+    },
+    {
+      "_name": "Rock",
+      "_profilePic": "..\\assets\\Ellipse -8.png",
+      "_gender": "male",
+      "_department": [
+        "HR",
+        "Sales",
+        "Finance",
+        "Engineer"
+      ],
+      "_salary": "438100",
+      "_note": "request",
+      "_startDate": "10 Jan 2021",
+      "id": 4
     }
   ]
 }

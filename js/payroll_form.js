@@ -100,6 +100,7 @@ const save = (Event) => {
         {
             createOrUpdateEmployeePayroll();
         }
+        localStorage.removeItem('editEmp');
     } 
     catch (error) { return; }
 }
